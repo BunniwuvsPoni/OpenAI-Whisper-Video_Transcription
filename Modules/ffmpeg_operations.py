@@ -1,11 +1,10 @@
 # Date last updated: 2024/11/17
 
+from __future__ import annotations
+from ffmpeg import FFmpeg, Progress
+
 # This script is intended to: Extract Audio from the Video file
 def extract_audio(inputFile, outputFile):
-    from __future__ import annotations
-
-    from ffmpeg import FFmpeg, Progress
-
     ffmpeg = (
         FFmpeg()
         .input(inputFile)
@@ -36,10 +35,6 @@ def extract_audio(inputFile, outputFile):
 
 # This script is intended to: Add subtitles to the Video file
 def transcribe_subtitles(inputFile, outputFile, srtFile):
-    from __future__ import annotations
-
-    from ffmpeg import FFmpeg, Progress
-
     subtitles = "subtitles='" + srtFile.replace(":/", "\\:/") + "'"
 
     ffmpeg = (
