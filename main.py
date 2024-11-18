@@ -6,7 +6,10 @@ def main():
     import Modules.openai_whisper
 
     # Get directory of video(s)
-    # directory = Modules.directory_services.select_directory()
+    directory = Modules.directory_services.select_directory()
+
+    # Get all .mp4 files
+    filteredFiles = Modules.directory_services.filter_directory(directory, '.mp4')
 
     ###############
     ### TESTING ###
