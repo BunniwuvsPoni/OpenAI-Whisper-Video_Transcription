@@ -1,9 +1,6 @@
 # This is the main Python script executing Function(s)/Module(s) as required for the Application to run
 
 # Main function
-import Modules.ffmpeg_operations
-
-
 def main():
     import Modules.directory_services
     import Modules.openai_whisper
