@@ -4,6 +4,6 @@
 def transcribe_audio(file):
     import whisper
 
-    model = whisper.load_model("tiny")
+    model = whisper.load_model("turbo")
     result = model.transcribe(file)
     print(result["text"])
