@@ -2,16 +2,21 @@
 
 # Main function
 def main():
-    print("Hello, World!")
+    import Modules.directory_services
+    import Modules.openai_whisper
 
-    import Modules.select_directory
+    # Get directory of video(s)
+    # directory = Modules.directory_services.select_directory()
 
-    directory = Modules.select_directory.select_directory()
+    ###############
+    ### TESTING ###
+    ###############
 
-    if not directory:
-        print ("Null or empty directory.")
-    else:
-        print (directory)
+    directory = "C:/Users/zichu/Downloads/2024-11-17/video.mp4"
+    
+    print (directory)
+
+    print ("End")
 
 # Main execution
 if __name__ == "__main__":
