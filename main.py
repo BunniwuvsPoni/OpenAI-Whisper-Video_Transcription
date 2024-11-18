@@ -5,6 +5,7 @@ def main():
     import Modules.directory_services
     import Modules.openai_whisper
     import Modules.ffmpeg_operations
+    import Modules.logging
     import os
 
     # Get directory of video(s)
