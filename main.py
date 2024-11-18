@@ -24,10 +24,8 @@ def main():
     # Process filtered files
     for file in filteredFiles:
         # Extract .mp3
-        inputFile = directory + "/" + file
-        print (inputFile)        
+        inputFile = directory + "/" + file     
         extractAudioOutputFile = mp3Directory + file.replace(".mp4", ".mp3")
-        print (extractAudioOutputFile)
 
         Modules.ffmpeg_operations.extract_audio(inputFile, extractAudioOutputFile)
 
