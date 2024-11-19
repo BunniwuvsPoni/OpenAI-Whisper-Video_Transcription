@@ -12,6 +12,6 @@ def log(logfilepath, logmessage):
 
 # Function: Current Time
 def time():
-    from timeit import default_timer
+    from datetime import datetime
 
-    return default_timer()
+    return datetime.now()
