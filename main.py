@@ -49,7 +49,7 @@ def main():
         logString = "Extracted .mp3 from: " + file
         Modules.logging.log(log, logString)
         timeDifferencemp3 = timeEndmp3 - timeStartmp3
-        timeDifferencemp3String = Modules.logging.time_to_string(timeDifferencemp3)
+        timeDifferencemp3String = str(timeDifferencemp3)
         logString = "Total extraction time of: " + timeDifferencemp3String + " for: " + file
         Modules.logging.log(log, logString)
 
@@ -69,7 +69,7 @@ def main():
         logString = "Transcribed .mp3 from: " + file
         Modules.logging.log(log, logString)
         timeDifferenceTranscription = timeEndTranscription - timeStartTranscription
-        timeDifferenceTranscriptionString = Modules.logging.time_to_string(timeDifferenceTranscription)
+        timeDifferenceTranscriptionString = str(timeDifferenceTranscription)
         logString = "Total transcription time of: " + timeDifferenceTranscriptionString + " for: " + file
         Modules.logging.log(log, logString)
 
@@ -89,7 +89,7 @@ def main():
         logString = "Transcoded subtitles from: " + file
         Modules.logging.log(log, logString)
         timeDifferenceTranscoding = timeEndTranscoding - timeStartTranscoding
-        timeDifferenceTranscodingString = Modules.logging.time_to_string(timeDifferenceTranscoding)
+        timeDifferenceTranscodingString = str(timeDifferenceTranscoding)
         logString = "Total transcoding time of: " + timeDifferenceTranscodingString + " for: " + file
         Modules.logging.log(log, logString)
 
@@ -98,7 +98,7 @@ def main():
     logString = "End of processing files in: " + directory
     Modules.logging.log(log, logString)
     timeDifferenceRun = timeEnd - timeStart
-    timeDifferenceRunString = Modules.logging.time_to_string(timeDifferenceRun)
+    timeDifferenceRunString = str(timeDifferenceRun)
     logString = "Total processing time: " + timeDifferenceRunString
     Modules.logging.log(log, logString)
 
