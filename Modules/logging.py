@@ -15,3 +15,10 @@ def time():
     from datetime import datetime
 
     return datetime.now()
+
+# Function: Convert Time to String
+def time_to_string(time):
+    # Convert datetime to string using strftime()
+    date_time_str = time.strftime("%Y-%m-%d %H:%M:%S")
+
+    return date_time_str
